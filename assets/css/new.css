@@ -1,0 +1,352 @@
+.team-section {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.team-section .slider-title {
+	color: transparent;
+	display: none;
+	font-size: 300px;
+	font-weight: bold;
+	letter-spacing: -30px;
+	line-height: 1;
+	margin-bottom: 0;
+	margin-top: 0;
+	position: absolute;
+	right: -140px;
+	text-shadow: 1px 1px 2px #fff, 0px 0px 30px rgba(0, 0, 0, 0.05);
+	text-transform: uppercase;
+	top: 50%;
+	-webkit-transform: translateY(-58%) rotate(90deg);
+	transform: translateY(-58%) rotate(90deg);
+	word-break: unset;
+	z-index: 4;
+}
+
+@media (max-width: 1700px) {
+	.team-section .slider-title {
+		font-size: 250px;
+		right: -60px;
+	}
+}
+
+.team-section .social-icons {
+	display: flex;
+	flex-direction: column;
+}
+
+.team-section .social-icons a {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.team-section .social-icons a:not(:last-child) {
+	margin-bottom: 22px;
+}
+
+@media (max-width: 767px) {
+	.team-section .social-icons {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.team-section .social-icons a {
+		margin-bottom: 0 !important;
+	}
+
+	.team-section .social-icons a:not(:last-child) {
+		margin-right: 20px;
+	}
+}
+
+.team-section .menu__item {
+	color: #36404c;
+	cursor: pointer;
+	margin-bottom: 15px;
+	opacity: 0.3;
+	outline: none;
+	text-decoration: none;
+}
+
+.team-section .menu__item:hover,
+.team-section .menu__item:focus {
+	opacity: 1;
+	outline: none;
+}
+
+.team-section .menu__item {
+	display: block;
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1.1;
+	transition: all 0.2s ease-in-out 0s;
+}
+
+.team-section .menu__item span {
+	color: #ed4266;
+	font-weight: 400;
+}
+
+.team-section .menu__item.flex-active,
+.team-section .menu__item.flex-active:hover,
+.team-section .menu__item.flex-active:focus {
+	opacity: 1;
+}
+
+.team-section .flexslider-controls {
+	left: 6%;
+	position: absolute;
+	right: 0;
+	top: calc(50% + 7px);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: auto;
+	z-index: 4;
+}
+
+.team-section .flexslider-controls > ul {
+	padding-left: 0;
+}
+
+.team-section .team-social-icons {
+	margin-bottom: 20px;
+	margin-top: 0;
+	z-index: 4;
+}
+
+.team-section .team-social-icons a.social-icon.color-icon.border-icon.rounded-icon {
+	border-style: solid;
+	border-width: 3px;
+	height: 40px;
+	line-height: 34px;
+	margin-bottom: 4px;
+	padding: 0;
+	width: 40px;
+}
+
+.team-section .team-social-icons {
+	display: none;
+	transition: all 0.2s ease-in-out 0s;
+}
+
+.team-section .menu__item.flex-active + .team-social-icons {
+	display: block;
+}
+
+@media (min-width: 768px) {
+	.team-section .team-social-icons {
+		margin-bottom: 0;
+		position: absolute;
+		right: 10px;
+		top: 47%;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	.team-section .menu__item {
+		font-size: 25px;
+		text-align: right;
+		width: 85%;
+	}
+
+	.team-section .flexslider-controls {
+		left: auto;
+		right: 60px;
+		width: 450px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.team-section .team-social-icons {
+		right: 40px;
+	}
+
+	.team-section .menu__item {
+		font-size: 30px;
+		text-align: right;
+		width: 80%;
+	}
+
+	.team-section .flexslider-controls {
+		left: auto;
+		right: 30px;
+		width: 800px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.team-section .flexslider-controls {
+		left: auto;
+		right: 30px;
+		width: 1100px;
+	}
+
+	.team-section .menu__item {
+		font-size: 40px;
+		width: 85%;
+	}
+
+	.team-section .team-social-icons {
+		right: 38px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.team-section .slider-title {
+		display: block;
+	}
+
+	.team-section .menu__item {
+		width: 67%;
+	}
+}
+
+@media (max-width: 767px) {
+	.team-section .team-social-icons,
+	.team-section .position {
+		display: none !important;
+	}
+
+	.team-section .menu__item {
+		font-size: 24px;
+		margin-bottom: 10px;
+		text-align: right;
+	}
+
+	.team-section .flexslider-controls {
+		right: 45px;
+	}
+}
+
+@media (max-width: 575px) {
+	.team-section .menu__item {
+		font-size: 14px;
+	}
+
+	.team-section .flexslider-controls {
+		right: 15px;
+	}
+}
+
+.team-section2 {
+	background-image: url("../images/parallax/team_bg.jpg");
+	overflow: visible !important;
+}
+
+.team-section2 .row.position-absolute {
+	top: 100%;
+	-webkit-transform: translateY(26%);
+	transform: translateY(26%);
+	width: 100%;
+}
+
+@media (max-width: 1199px) {
+	.team-section2 .row.position-absolute {
+		margin-top: 60px;
+		position: static !important;
+		-webkit-transform: none;
+		transform: none;
+		width: auto;
+	}
+}
+
+.team-section2 .social-icons a:not(:last-child) {
+	margin-right: 15px;
+}
+
+.team-section2 .vertical-item .item-media + .item-content {
+	padding-bottom: 35px;
+	padding-top: 35px;
+}
+.flexslider .slides img {
+    display: block;
+    width: 100%;
+}
+img {
+    max-width: 100%;
+}
+.flexslider {
+	margin: 0;
+	padding: 0;
+}
+
+.flexslider .slides > li {
+	-webkit-backface-visibility: hidden;
+	display: none;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {
+	display: block;
+	width: 100%;
+}
+
+.flex-pauseplay span {
+	text-transform: capitalize;
+}
+
+/* Clearfix for the .slides element */
+.slides:after {
+	clear: both;
+	content: "\0020";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+	outline: none;
+}
+.container-px-0 [class*='container'] {
+    padding-left: 0;
+    padding-right: 0;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* FlexSlider Necessary Styles */
+.flexslider {
+	margin: 0;
+	padding: 0;
+}
+
+.flexslider .slides > li {
+	-webkit-backface-visibility: hidden;
+	display: none;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {
+	display: block;
+	width: 100%;
+}
+
+.flex-pauseplay span {
+	text-transform: capitalize;
+}
+
+/* Clearfix for the .slides element */
+.slides:after {
+	clear: both;
+	content: "\0020";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
