@@ -105,6 +105,14 @@ include 'includes/navbar.php';
         <?php $pdo->close();?>
     </div>
 
+
+    <!--====== Vendors js ======-->
+    <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+
+    <!-- Main Activation JS -->
+    <script src="assets/js/main.js"></script>
     <?php include 'includes/scripts.php';?>
     <script>
     $(function() {
@@ -124,6 +132,18 @@ include 'includes/navbar.php';
         });
 
     });
+    </script>
+
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
     </script>
 </body>
 

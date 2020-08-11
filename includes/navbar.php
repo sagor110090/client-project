@@ -1,4 +1,3 @@
-<!-- Header Start -->
 <header class="main-header">
     <!-- Header Top Start -->
     <div class="header-top-nav">
@@ -15,9 +14,8 @@
                 <div class="col-lg-8 col-md-8 text-right">
                     <div class="header-right-nav">
                         <ul class="res-xs-flex">
-
                             <li class="after-n">
-                                <a href="login.php"> <button class="login_sample" style="width:auto;">Login</button></a>
+                                <a href="login.html"><i class="fa fa-accounts"></i>Login</a>
                             </li>
 
                         </ul>
@@ -26,12 +24,10 @@
                                 <!-- Settings Start -->
 
                                 <li class="dropdown xs-after-n">
-                                    <a class="angle-icon" href="#">Register</a>
-                                    <ul class="dropdown-nav">
-                                        <li><a href="#">Customer Register</a></li>
-                                        <li><a href="signup.php">Seller Register</a></li>
-                                    </ul>
+                                    <a href="signup.html">Register</a>
+
                                 </li>
+
                                 <li class="dropdown xs-after-n">
                                     <a class="" href="contact.html">Contact Us</a>
                                     <!-- <ul class="dropdown-nav">
@@ -39,8 +35,6 @@
                                                     <li><a href="login.html">Sign-In</a></li>
                                                 </ul> -->
                                 </li>
-
-
                                 <li class="dropdown xs-after-n">
                                     <a class="angle-icon" href="#">My Cachback Mart</a>
                                     <ul class="dropdown-nav">
@@ -117,22 +111,15 @@
 
                                 </ul>
                             </li>
-
                             <li class="menu-dropdown">
                                 <a href="referal.html">Referral Income <i class="ion-ios-arrow-down-a"></i></a>
-
-
                             </li>
+
                             <li class="menu-dropdown">
                                 <a href="business.html">Add Your Business <i class="ion-ios-arrow-down-a"></i></a>
-
-
-                                <ul class="sub-menu">
-                                    <li><a href="register_Seller.html">Become A CBM Seller</a></li>
-
-                                </ul>
-
                             </li>
+
+
                         </ul>
                     </div>
                     <!--Main Navigation End -->
@@ -238,70 +225,26 @@
                         </div>
                         <!--Contact info End -->
                         <!--Cart info Start -->
-                        <!-- <div class="cart-info d-flex">
+                        <div class="cart-info d-flex">
                             <div class="mini-cart-warp">
-                                <a href="#" class="count-cart"><span>$20.00</span></a>
+                                <a href="#" class="count-cart"><span class="cart_count"></span></a>
                                 <div class="mini-cart-content">
                                     <ul>
-                                        <li class="single-shopping-cart">
-                                            <div class="shopping-cart-img">
-                                                <a href="product.php?product=<?=$row['slug']?>"><img alt=""
-                                                        src="assets/images/product-image/mini-cart/1.jpg" /></a>
-                                                <span class="product-quantity">1x</span>
-                                            </div>
-                                            <div class="shopping-cart-title">
-                                                <h4><a href="product.php?product=<?=$row['slug']?>">Juicy
-                                                        Couture...</a></h4>
-                                                <span>$9.00</span>
-                                                <div class="shopping-cart-delete">
-                                                    <a href="#"><i class="ion-android-cancel"></i></a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="single-shopping-cart">
-                                            <div class="shopping-cart-img">
-                                                <a href="product.php?product=<?=$row['slug']?>"><img alt=""
-                                                        src="assets/images/product-image/mini-cart/2.jpg" /></a>
-                                                <span class="product-quantity">1x</span>
-                                            </div>
-                                            <div class="shopping-cart-title">
-                                                <h4><a href="product.php?product=<?=$row['slug']?>">Water and
-                                                        Wind...</a></h4>
-                                                <span>$11.00</span>
-                                                <div class="shopping-cart-delete">
-                                                    <a href="#"><i class="ion-android-cancel"></i></a>
-                                                </div>
-                                            </div>
+
+
+                                        <li>
+                                            <ul class="menu" id="cart_menu">
+                                            </ul>
                                         </li>
                                     </ul>
-                                    <div class="shopping-cart-total">
-                                        <h4>Subtotal : <span>$20.00</span></h4>
-                                        <h4>Shipping : <span>$7.00</span></h4>
-                                        <h4>Taxes : <span>$0.00</span></h4>
-                                        <h4 class="shop-total">Total : <span>$27.00</span></h4>
-                                    </div>
+
                                     <div class="shopping-cart-btn text-center">
-                                        <a class="default-btn" href="checkout.html">checkout</a>
+                                        <a class="default-btn" href="cart_view.php">Go to Cart</a>
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                         <!--Cart info End -->
-                        <li class="dropdown messages-menu">
-                            <!-- Menu toggle button -->
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-shopping-cart"></i>
-                                <span class="label label-success cart_count"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="header">You have <span class="cart_count"></span> item(s) in cart</li>
-                                <li>
-                                    <ul class="menu" id="cart_menu">
-                                    </ul>
-                                </li>
-                                <li class="footer"><a href="cart_view.php">Go to Cart</a></li>
-                            </ul>
-                        </li>
                     </div>
                 </div>
             </div>
@@ -343,10 +286,11 @@
                             <li class="menu-dropdown">
                                 <a href="referal.html">Referral Income </a>
                             </li>
-
                             <li class="menu-dropdown">
                                 <a href="business.html">Add Your Business <i class="ion-ios-arrow-down-a"></i></a>
                             </li>
+
+
                         </ul>
                     </nav>
                 </div>
@@ -356,4 +300,3 @@
     </div>
     <!--Header Bottom Account End -->
 </header>
-<!-- Header End -->
