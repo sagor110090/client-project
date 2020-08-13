@@ -17,7 +17,7 @@ if (isset($_POST['signup'])) {
     $password = $_POST['password'];
     $repassword = $_POST['repassword'];
     $now = date('Y-m-d');
-    $sql = "INSERT INTO users (email, password, firstname, lastname, role, created_on) VALUES ('$email', '$password', '$firstname', '$lastname', 'saler', '$now')";
+    $sql = "INSERT INTO users (email, password, firstname, lastname, role, created_on) VALUES ('$email', '$password', '$firstname', '$lastname', 'user', '$now')";
     if (mysqli_query($conn, $sql)) {
         echo "New record created successfully !";
     } else {
