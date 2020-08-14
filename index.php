@@ -7,6 +7,8 @@ $conn = $pdo->open();
 // $stmt = $conn->prepare("SELECT * FROM products ");
 $stmt = $conn->prepare("SELECT * FROM products order by RAND() ");
 $stmt->execute();
+$slider = $conn->prepare("SELECT * FROM slider order by RAND() ");
+$slider->execute();
 // print_r($stmt);
 
 include 'includes/header.php';
@@ -32,50 +34,24 @@ include 'includes/navbar.php';
         <!-- Slider Arae Start -->
         <div class="slider-area">
             <div class="slider-active-3 owl-carousel slider-hm8 owl-dot-style">
+                <?php foreach ($slider as $row) {?>
                 <!-- Slider Single Item Start -->
                 <div class="slider-height-10 d-flex align-items-start justify-content-start bg-img"
-                    style="background-image: url(img/sample-32.jpg);">
+                    style="background-image: url(<?='admin/images/' . $row['image']?>);">
                     <div class="container">
                         <div class="slider-content-16 slider-animated-1 text-left">
                             <h1 class="animated">
-                                DISPOSABLE <br />
-                                <strong>MEDICAL MASK</strong>
+                                <?=$row['big_text']?><br />
+                                <strong></strong>
                             </h1>
-                            <p class="animated">Capacity 100m Pcs/ Day</p>
+                            <p class="animated"><?=$row['small_text']?></p>
                             <a href="#" class="shop-btn animated">SHOP NOW</a>
                         </div>
                     </div>
                 </div>
                 <!-- Slider Single Item End -->
-                <!-- Slider Single Item Start -->
-                <div class="slider-height-10 d-flex align-items-start justify-content-start bg-img"
-                    style="background-image: url(img/sample-33.jpg);">
-                    <div class="container">
-                        <div class="slider-content-16 slider-animated-1 text-left">
-                            <h1 class="animated">
-                                DISPOSABLE<br />
-                                <strong>NITRILE GLOVES</strong>
-                            </h1>
-                            <p class="animated">Hardy 7 mil Heavy Duty Nitrile Gloves</p>
-                            <a href="#" class="shop-btn animated">SHOP NOW</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slider Single Item End -->
-                <!-- Slider Single Item Start -->
-                <div class="slider-height-10 d-flex align-items-start justify-content-start bg-img"
-                    style="background-image: url(img/Slider.jpg);">
-                    <div class="container">
-                        <div class="slider-content-16 slider-animated-1 text-left">
-                            <!-- <h1 class="animated">
+                <?php }?>
 
-                                </h1>
-                                <p class="animated">Hardy 7 mil Heavy Duty Nitrile Gloves</p>  -->
-                            <a href="#" class="shop-btn animated">SHOP NOW</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slider Single Item End -->
             </div>
         </div>
         <!-- Slider Arae End -->
@@ -490,7 +466,8 @@ foreach ($stmt as $row) {
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-lg-4">
-                            <p class="copy-text">Copyright © <a href="https://hasthemes.com/"> CashbackMart</a>. All
+                            <p class="copy-text">Copyright © <a href="https://hasthemes.com/">
+                                    CashbackMart</a>. All
                                 Rights Reserved</p>
                         </div>
                         <div class="col-md-6 col-lg-8">
@@ -557,15 +534,18 @@ foreach ($stmt as $row) {
                                         <i class="ion-android-star"></i>
                                         <i class="ion-android-star"></i>
                                     </div>
-                                    <span class="read-review"><a class="reviews" href="#">Read reviews (1)</a></span>
+                                    <span class="read-review"><a class="reviews" href="#">Read reviews
+                                            (1)</a></span>
                                 </div>
                                 <div class="pricing-meta">
                                     <ul>
                                         <li class="old-price not-cut">€18.90</li>
                                     </ul>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore
-                                    et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor
+                                    incidid ut labore
+                                    et dolore magna aliqua. Ut enim ad minim venialo quis nostrud
+                                    exercitation ullamco
                                 </p>
                                 <div class="pro-details-size-color">
                                     <div class="pro-details-color-wrap">
@@ -588,7 +568,8 @@ foreach ($stmt as $row) {
                                 </div>
                                 <div class="pro-details-wish-com">
                                     <div class="pro-details-wishlist">
-                                        <a href="#"><i class="ion-android-favorite-outline"></i>Add to wishlist</a>
+                                        <a href="#"><i class="ion-android-favorite-outline"></i>Add to
+                                            wishlist</a>
                                     </div>
                                     <div class="pro-details-compare">
                                         <a href="#"><i class="ion-ios-shuffle-strong"></i>Add to compare</a>
